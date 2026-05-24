@@ -46,7 +46,7 @@ async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
 
     if uid == ADMIN_ID and admin_reply_target is not None:
-        await context.bot.send_message(admin_reply_target, f"📩 Ответ от администрации:
+        await context.bot.send_message(admin_reply_target, f"📩 Ответ от администрации:"
 
 {text}")
         admin_reply_target = None
